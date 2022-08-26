@@ -1,0 +1,5 @@
+vmware -vl  
+esxcli system maintenanceMode set --enable true #bakım moduna alma
+##Vmware 7.0 sürümünün zip dosyasını datastrorea ekledikten sonra
+esxcli software profile update -d /vmfs/volumes/datastore1/VMware-ESXi-7.0U3f-20036589-depot.zip -p ESXi-7.0U3f-20036589-standard
+reboot
